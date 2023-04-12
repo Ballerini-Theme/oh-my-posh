@@ -1,0 +1,101 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "background": "#261c1e",
+    "current-line": "#3a2624",
+    "selection": "#583c38",
+    "foreground": "#fff2e7",
+    "foreground-alt": "#feeccb",
+    "comment": "#8e646b",
+    "pastel-blue": "#97d4d9",
+    "pastel-pink": "#feafbe",
+    "pastel-green": "#b3dFd3",
+    "pastel-yellow": "#efc764",
+    "red-orange": "#a45a49",
+    "light-red": "#e68e7b",
+    "pink-red": "#e94554",
+    "dark-brown": "#2F2325",
+    "green": "#67e480",
+    "cyan": "#55cdc4"
+  },
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "p:dark-brown",
+          "foreground": "p:pastel-yellow",
+          "style": "diamond",
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b0",
+          "properties": {
+            "style": "folder"
+          },
+          "template": " \ue5ff {{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "background": "p:selection",
+          "foreground": "p:pastel-yellow",
+          "style": "diamond",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "properties": {
+            "branch_icon": "\ue725 "
+          },
+          "template": " {{ .HEAD }} ",
+          "type": "git"
+        },
+        {
+          "background": "p:red-orange",
+          "foreground": "p:pastel-yellow",
+          "style": "diamond",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "template": "{{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} \uf487 {{ .Version }} {{ end }}{{ end }}",
+          "type": "project"
+        },
+        {
+          "background": "p:pink-red",
+          "foreground": "p:dark-brown",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "template": " \ue791 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
+          "type": "ruby"
+        },
+        {
+          "background": "p:pastel-yellow",
+          "foreground": "p:dark-brown",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "display_mode": "context"
+          },
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "type": "python"
+        },
+        {
+          "background": "p:green",
+          "foreground": "p:dark-brown",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "template": " \ue718 {{ .Full }} ",
+          "type": "node"
+        },
+        {
+          "background": "p:pink-red",
+          "foreground": "p:foreground",
+          "style": "diamond",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "background_templates": ["{{ if gt .Code 0 }}p:pink-red{{ end }}"],
+          "template": " \ue20f ",
+          "type": "exit"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
