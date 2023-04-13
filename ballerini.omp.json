@@ -88,7 +88,9 @@
           "style": "diamond",
           "leading_diamond": "<transparent,background>\ue0b0</>",
           "trailing_diamond": "\ue0b0",
-          "background_templates": ["{{ if gt .Code 0 }}p:pink-red{{ end }}"],
+          "background_templates": [
+            "{{ if gt .Code 0 }}p:pink-red{{ end }}"
+          ],
           "template": " \ue20f ",
           "type": "exit"
         }
