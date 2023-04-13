@@ -1,19 +1,21 @@
-### [?Name?](https://website-link.com)
+### [Oh My Posh](https://ohmyposh.dev/)
+
+For this theme to work well, you must have a [nerd font](https://www.nerdfonts.com/) installed.
 
 #### Install using Git
 
-If you are a git user, you can install the theme by cloning the repository:
+If you are a git user, you can install the theme by running the command in the desired folder:
 
+- Bash/Zsh
+
+```sh
+git clone https://github.com/dreisss/oh-my-posh.git && shell="$(oh-my-posh get shell)" && echo "eval \"\$(oh-my-posh init $shell --config $(pwd)/oh-my-posh/ballerini.omp.json)\"" >> ~/.$(echo $shell)rc
 ```
-$ git clone https://github.com/Ballerini-Theme/template.git
+
+- Powershell (Administrator)
+
+```ps1
+git clone https://github.com/dreisss/oh-my-posh.git; Set-ExecutionPolicy -Scope LocalMachine Bypass -Force; echo "oh-my-posh init pwsh --config \"$(pwd)\oh-my-posh\ballerini.omp.json\" | Invoke-Expression" >> $PROFILE
 ```
 
-#### Install manually
-
-Download using the [GitHub .zip download](https://github.com/Ballerini-Theme/template/archive/main.zip) option and unzip them.
-
-#### Activating theme
-
-1. Step 1
-2. Step 2
-3. Step 3
+After this, reload your profile for the changes to take effect.
