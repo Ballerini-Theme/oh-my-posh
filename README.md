@@ -33,9 +33,9 @@ All instructions can be found at [INSTALL.md](./INSTALL.md).
 
 This theme is maintained by the following people/person and bunch of [awesome contributors](https://github.com/Ballerini-Theme/oh-my-posh/graphs/contributors).
 
-| [![Alpha Vylly](https://github.com/AlphaLawless.png?size=100)](https://github.com/AlphaLawless) |
-| ----------------------------------------------------------------------------------------------- |
-| [Alpha Vylly](https://github.com/AlphaLawless)                                                  |
+| [![Davi Reis](https://github.com/dreisss.png?size=100)](https://github.com/dreisss) |
+| ----------------------------------------------------------------------------------- |
+| [Davi Reis](https://github.com/dreisss)                                             |
 
 ## License
 
